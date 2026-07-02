@@ -1,6 +1,6 @@
-# Fieldr — marketing site
+# Replyhive — marketing site
 
-Single-page site for Fieldr (AI chat assistants for small business), with a
+Single-page site for Replyhive (AI chat assistants for small business), with a
 working demo chatbot and a lead-capture form.
 
 ## Structure
@@ -26,7 +26,7 @@ Redeploy after adding it. The demo calls `claude-sonnet-4-6`.
 3. In `index.html`, set `FORMSPREE_FORM_ID` to that ID.
 
 Until the ID is set, the "Get my free demo" button falls back to opening the
-visitor's email client addressed to hello@fieldr.au, so no lead is lost.
+visitor's email client addressed to hello@replyhive.com.au, so no lead is lost.
 
 ## Local preview
 Open `index.html` directly in a browser. The chatbot needs the deployed

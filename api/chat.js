@@ -2,7 +2,7 @@
 // Keeps the Anthropic API key on the server so it is never exposed in the browser.
 // Set ANTHROPIC_API_KEY in your Vercel project's Environment Variables.
 
-const SYSTEM_PROMPT = `You are a helpful AI assistant for "Forget Me Not Eatery", a warm and welcoming cafe located in Greenvale, Melbourne. You are demonstrating what a Fieldr AI assistant looks like for potential business clients.
+const SYSTEM_PROMPT = `You are a helpful AI assistant for "Forget Me Not Eatery", a warm and welcoming cafe located in Greenvale, Melbourne. You are demonstrating what a Replyhive AI assistant looks like for potential business clients.
 
 About the cafe:
 - Located at Direct Plants nursery, Mickleham Road Greenvale

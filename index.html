@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fieldr — AI Assistants for Small Business</title>
+<title>Replyhive — AI Assistants for Small Business</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -725,7 +725,7 @@
   }
 
   .cta-section::before {
-    content: 'FIELDR';
+    content: 'REPLYHIVE';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -890,7 +890,7 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">field<span>r</span></a>
+  <a href="#" class="nav-logo">replyhiv<span>e</span></a>
   <a href="#contact" class="nav-cta">Get a free demo →</a>
 </nav>
 
@@ -898,12 +898,12 @@
 <section class="hero">
   <div class="hero-eyebrow">AI Assistants for Small Business</div>
   <h1>Your business,<br><em>always answering.</em></h1>
-  <p class="hero-sub">Fieldr builds AI chat assistants that handle enquiries, answer questions and capture leads — 24 hours a day, without extra staff.</p>
+  <p class="hero-sub">Replyhive builds AI chat assistants that handle enquiries, answer questions and capture leads — 24 hours a day, without extra staff.</p>
   <div class="hero-actions">
     <a href="#demo" class="btn-primary">See a live demo</a>
     <a href="#contact" class="btn-secondary">Book a free call ↗</a>
   </div>
-  <div class="hero-bg-text">FIELDR</div>
+  <div class="hero-bg-text">REPLYHIVE</div>
 </section>
 
 <!-- STATS BAR -->
@@ -1023,7 +1023,7 @@
           <button class="chatbot-send" id="sendBtn" onclick="sendMessage()">Send</button>
         </div>
       </div>
-      <div class="demo-note">✦ Powered by Fieldr — this is what your customers would see</div>
+      <div class="demo-note">✦ Powered by Replyhive — this is what your customers would see</div>
     </div>
   </div>
 </section>
@@ -1073,14 +1073,14 @@
     <input class="cta-input" type="email" id="ctaEmail" placeholder="your@email.com" />
     <button class="cta-submit" onclick="submitEmail()">Get my free demo</button>
   </div>
-  <p class="cta-or">Or email us directly at <a href="mailto:hello@fieldr.au">hello@fieldr.au</a></p>
+  <p class="cta-or">Or email us directly at <a href="mailto:hello@replyhive.com.au">hello@replyhive.com.au</a></p>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">field<span>r</span></div>
-  <p>© 2026 Fieldr. Built in Melbourne, Australia.</p>
-  <a href="mailto:hello@fieldr.au">hello@fieldr.au</a>
+  <div class="footer-logo">replyhiv<span>e</span></div>
+  <p>© 2026 Replyhive. Built in Melbourne, Australia.</p>
+  <a href="mailto:hello@replyhive.com.au">hello@replyhive.com.au</a>
 </footer>
 
 <script>
@@ -1169,7 +1169,7 @@ async function submitEmail() {
   // Fallback if Formspree isn't configured yet: open the user's email client.
   if (!FORMSPREE_FORM_ID || FORMSPREE_FORM_ID === 'REPLACE_WITH_FORM_ID') {
     window.location.href =
-      `mailto:hello@fieldr.au?subject=Free demo request&body=${encodeURIComponent('I\'d like a free demo. My email: ' + email)}`;
+      `mailto:hello@replyhive.com.au?subject=Free demo request&body=${encodeURIComponent('I\'d like a free demo. My email: ' + email)}`;
     return;
   }
 
@@ -1177,16 +1177,16 @@ async function submitEmail() {
     const res = await fetch(`https://formspree.io/f/${FORMSPREE_FORM_ID}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({ email, source: 'fieldr.au demo CTA' })
+      body: JSON.stringify({ email, source: 'replyhive.com.au demo CTA' })
     });
     if (res.ok) {
       alert(`Thanks! We'll be in touch at ${email} within 24 hours to set up your free demo.`);
       input.value = '';
     } else {
-      alert('Something went wrong — please email us directly at hello@fieldr.au.');
+      alert('Something went wrong — please email us directly at hello@replyhive.com.au.');
     }
   } catch (e) {
-    alert('Something went wrong — please email us directly at hello@fieldr.au.');
+    alert('Something went wrong — please email us directly at hello@replyhive.com.au.');
   }
 }
 </script>
